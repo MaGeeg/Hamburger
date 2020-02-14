@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+		<!-- To jest przykładowa sekcja w BEM
+		
+			<section class day>
+				<section class day__header>
+					
+				</section>
+
+				<section class="day__paragraph">
+
+				</section>
+
+				<a class="day__link" href="podstrona.html">
+
+				</a>
+			</section>
+		-->
+
+<body>
+	<header class="site-header">
+		<nav class="navigation">
+			<ul class="navigation__list navigation__list--visible navigation__list--js">
+				<li class="navigation__item">
+					<a class="navigation__link" href="index.html">Strona Główna</a>
+				</li>
+				<li class="navigation__item">
+					<a class="navigation__link" href="podstrona.html">Podstrona</a>
+				</li>
+				<li class="navigation__item">
+					<a class="navigation__link" href="podstrona.html">Podstrona</a>
+				</li>
+				<li class="navigation__item">
+					<a class="navigation__link" href="podstrona.html">Podstrona</a>
+				</li>
+				<li class="navigation__item">
+					<a class="navigation__link" href="podstrona.html">Podstrona</a>
+				</li>
+
+				
+			</ul>
+		</nav>
+		
+		<button class="navigation__switcher navigation--switcher--js" aria-label="Open the menu">&equiv;
+		
+		</button>
+	</header>
+
+	
+	
+	<main class="main">
+				
+		<section class="section">	
+		
+			<h1 class="section__title section__title--js">
+					Moje Portfolio - Kim Kolwiek 
+			</h1>
+			
+			<button class="header__button header__button--js">zmień treść  nagłówka </button>
+			
+			<h2 class="section__title--description">
+					Kim Jestem - Witam Cię przybyszu na mojej stronie. Bardzo mi miło;-)
+			</h2>
+			
+			
+			
+			<p class="section__paragraph section__paragraph--js">
+					
+					Jestem osobą proaktywną. Zauważam trudności, ale skupiam się na rozwiązaniach.
+					<br>
+					<a class="section__link" href="#foto-pamietniczek">Przejdź do pamiętniczka</a>
+			</p>
+			
+
+			<section id="foto-pamietniczek">
+				<h2 class="diaryHeader">Pamiętniczek </h2>
+			</section>
+		</section>
+		
+		<div class="grid">
+			<section class="skills__giant">
+
+				
+					<h3 class="skills__giant--title"> Jak uczyć programowania, aby być zrozumianym?</h3>
+					
+					<p class="skills__giant--description skills__giant--js">
+						Kolejny rok pracuje w szkole Giganci Programowania. Prowadzę zajęcia z pasją dla różnych grup wiekowych. 
+						
+						Ten tydzień jest bardzo ciekawy podjąłem wyzwanie przerobienie kursu WTF. Ciekaw
+						jestem jak mi pójdzie i ile z tego co robię będę umieć zastosować w praktyce.
+						Czekam na rozstrzygnięcie konkursu na mentora. Czy wygram coś w końcu tak po
+						prostu?<br>
+						<a class="link" href="podstrona.html">Przejdż do artykułu o pisaniu html</a>
+					</p>
+			</section>
+
+				<section class="skills__tester">
+					
+					<h3 class="skills__tester--title"> Czy testowanie oprogramowania to prosta sprawa?</h3>
+					
+					<p class="skills__tester--description skills__tester--js"> 
+						Biorę udział w licznych webinarach i taka myśl przyszła mi do glowy:). Dzisiaj znów
+						wezme udział i warto byłoby nagrać, nie wszystko pamiętam.
+					</p>
+				</section>
+
+
+				<section class="skills__frontend">
+						
+					<h3 class="skills__frontend--title"> Jak stworzyc prawidłowy DOM? Dzień Frontendowca. </h3>
+						
+					<p class="skills__frontend--description skills__frontend--js">
+						Przerobiłem wszystkie lekcje z części 4 :). Zaczałem commitować samodzielnie. Pełen optymizmu zaczynam tydzień 5.
+
+					</p>
+					
+				</section>
+		
+		</div>
+		
+		<footer class="section__footer">
+				<p class="section__footer--description section__footer--js"> wszystkie moje tresci WTF</p>
+		</footer>
+
+
+		<!--inna forma listy-->
+		<section>
+			<dl>
+				<dt>CSS</dt>
+					<dd>to co widać czy ładne czy brzydkie to już od ciebie zależy</dd>
+				<dt>HTML</dt>
+					<dd>szkielet strony</dd>
+				
+			</dl>
+		</section>
+
+	</main>
+	
+	
+	
+	<script src="main.js"></script>
+		
+	
+</body>
+
+</html>
