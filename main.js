@@ -134,19 +134,28 @@ button.addEventListener('click', (e) => {
     console.log('hello arrow');
 } );
 */
+
 /* --- zmieniamy tresc button --- */
 
-const button = document.querySelector('.header__button--js');
-console.log(button)
+const button = document.querySelector('.section__button--js');
+console.log(button);
 
-/* --- Hamburger ---*/
+/* !!!!!!!!!! --- Hamburger ---  */
 
 button.addEventListener('click', (e) => {
-    const header = document.querySelector('.section__title--js');
-    header.innerHTML = 'klik, klik';
-    header.classList.toggle('section__title--red');
+    const section = document.querySelector('.section__title--js');
     
-    if(header.classList.contains('section__title--red')) {
+/* --- podmieniamy tekst w sekcji H1 na klik, klik --- */    
+    section.innerHTML = 'klik, klik';
+
+/* --- modyfikator red dodajemy do naszego nagłówka --- */
+   
+
+    section.classList.toggle('section__title--red');
+
+/* ---  Uwaga!!! w metodach z classlist(!!! tu klasy podajemy bez kropki!!! )    --- */ 
+    
+    if(section.classList.contains('section__title--red')) {
         console.log('jest klasa');
     }else {
         console.log('brak klasy');
